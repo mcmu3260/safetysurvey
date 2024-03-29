@@ -30,70 +30,69 @@ export default function () {
                 choices: [
                     "Canvas", "Dome", "Teepee", "Cabin"
                 ],
-                correctAnswer: "Slip and fall accidents"
+                correctAnswer: "Dome"
             },
         {
                 type: "radiogroup",
                 name: "question4",
                 title: "What should you do with your trash?",
                 choices: [
-                    "Leave it", "", "quart", "cup"
+                    "Leave it", "Bury it", "Pack it", "Burn it"
                 ],
-                correctAnswer: "tbsp"
+                correctAnswer: "Pack it"
             },
         {
                 type: "radiogroup",
                 name: "question5",
-                title: "What is the most common cause of lifeguard injuries?",
+                title: "What should you do if you encounter a wild animal?",
                 choices: [
-                    "Slip and fall accidents", "Pool chemicals", "Sunburns", "Sharks"
+                    "Approach it", "Ignore it", "Scare it", "Offer food"
                 ],
-                correctAnswer: "Slip and fall accidents"
+                correctAnswer: "Scare it"
             },
         {
                 type: "radiogroup",
                 name: "question6",
-                title: "How much sunscreen should you apply?",
+                title: "Which of the following is an appropriate way to store food while camping?",
                 choices: [
-                    "tsp", "tbsp", "quart", "cup"
+                    "Leave it out on a table", "Store it in sealed containers", "Scatter it around the campsite", "Hang it from a tree branch"
                 ],
-                correctAnswer: "tbsp"
+                correctAnswer: "Store it in sealed containers"
             },
         {
                 type: "radiogroup",
                 name: "question7",
-                title: "What is the most common cause of lifeguard injuries?",
-                choices: [
-                    "Slip and fall accidents", "Pool chemicals", "Sunburns", "Sharks"
+                title: "What is the recommended footwear for hiking in rugged terrain while camping?",
+                choices: [ "High heels", "Sandals", "Flip flops", "Hiking boots",
                 ],
-                correctAnswer: "Slip and fall accidents"
+                correctAnswer: "Hiking Boots"
             },
         {
                 type: "radiogroup",
                 name: "question8",
-                title: "How much sunscreen should you apply?",
+                title: "Which of the following tools is essential for navigation while hiking in the wilderness?",
                 choices: [
-                    "tsp", "tbsp", "quart", "cup"
+                    "Compass and map", "Smartphone with GPS", "Binoculars", "Sunglasses"
                 ],
-                correctAnswer: "tbsp"
+                correctAnswer: "Compass and map"
             },
         {
                 type: "radiogroup",
                 name: "question9",
-                title: "What is the most common cause of lifeguard injuries?",
+                title: "What should you do before setting up a tent on a camping trip?",
                 choices: [
-                    "Slip and fall accidents", "Pool chemicals", "Sunburns", "Sharks"
+                "Inflate the mattress", "Spray insect repellent", "Clear the ground of rocks, sticks, and debris", "Set up a hammock"
                 ],
-                correctAnswer: "Slip and fall accidents"
+                correctAnswer: "Clear the ground of rocks, sticks, and debris"
             },
         {
                 type: "radiogroup",
                 name: "question10",
-                title: "How much sunscreen should you apply?",
+                title: "Which of the following is a safe practice when cooking over a campfire?",
                 choices: [
-                    "tsp", "tbsp", "quart", "cup"
+                    "Pouring water on the fire to put it out quickly", "Cooking with flammable liquids", "Keeping a bucket of water nearby", "Building the fire close to the tent"
                 ],
-                correctAnswer: "tbsp"
+                correctAnswer: "Keeping a bucket of water nearby"
             },
     ];
     const nQuestion = Math.floor((Math.random() * questions.length));
