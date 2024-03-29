@@ -4,6 +4,99 @@ import { Model } from 'survey-core';
 import { Survey } from 'survey-react-ui';
 
 export default function () {
+    const questions =[
+        {
+                type: "radiogroup",
+                name: "question1",
+                title: "Which of the following is an essential item for starting a campfire?",
+                choices: [
+                    "Plastic Bottles", "Matches", "Fruit", "Electronics"
+                ],
+                correctAnswer: "Matches"
+            },
+        {
+                type: "radiogroup",
+                name: "question2",
+                title: "What is the most appropriate method for purifying water while camping?",
+                choices: [
+                    "Salt", "Boiling", "Lemon Juice", "Sit in the Sun"
+                ],
+                correctAnswer: "Boiling"
+            },
+        {
+                type: "radiogroup",
+                name: "question3",
+                title: "Which type of tent is typically easiest to set up??",
+                choices: [
+                    "Canvas", "Dome", "Teepee", "Cabin"
+                ],
+                correctAnswer: "Slip and fall accidents"
+            },
+        {
+                type: "radiogroup",
+                name: "question4",
+                title: "What should you do with your trash?",
+                choices: [
+                    "Leave it", "", "quart", "cup"
+                ],
+                correctAnswer: "tbsp"
+            },
+        {
+                type: "radiogroup",
+                name: "question5",
+                title: "What is the most common cause of lifeguard injuries?",
+                choices: [
+                    "Slip and fall accidents", "Pool chemicals", "Sunburns", "Sharks"
+                ],
+                correctAnswer: "Slip and fall accidents"
+            },
+        {
+                type: "radiogroup",
+                name: "question6",
+                title: "How much sunscreen should you apply?",
+                choices: [
+                    "tsp", "tbsp", "quart", "cup"
+                ],
+                correctAnswer: "tbsp"
+            },
+        {
+                type: "radiogroup",
+                name: "question7",
+                title: "What is the most common cause of lifeguard injuries?",
+                choices: [
+                    "Slip and fall accidents", "Pool chemicals", "Sunburns", "Sharks"
+                ],
+                correctAnswer: "Slip and fall accidents"
+            },
+        {
+                type: "radiogroup",
+                name: "question8",
+                title: "How much sunscreen should you apply?",
+                choices: [
+                    "tsp", "tbsp", "quart", "cup"
+                ],
+                correctAnswer: "tbsp"
+            },
+        {
+                type: "radiogroup",
+                name: "question9",
+                title: "What is the most common cause of lifeguard injuries?",
+                choices: [
+                    "Slip and fall accidents", "Pool chemicals", "Sunburns", "Sharks"
+                ],
+                correctAnswer: "Slip and fall accidents"
+            },
+        {
+                type: "radiogroup",
+                name: "question10",
+                title: "How much sunscreen should you apply?",
+                choices: [
+                    "tsp", "tbsp", "quart", "cup"
+                ],
+                correctAnswer: "tbsp"
+            },
+    ];
+    const nQuestion = Math.floor((Math.random() * questions.length));
     const surveyJson = {
         title: "Lifeguard Safety",
         showCorrectAnswer: "always",
@@ -21,15 +114,7 @@ export default function () {
                 isRequired: true
             }]
         }, {
-            elements: [{
-                type: "radiogroup",
-                name: "question1",
-                title: "What is the most common cause of lifeguard injuries?",
-                choices: [
-                    "Slip and fall accidents", "Pool chemicals", "Sunburns", "Sharks"
-                ],
-                correctAnswer: "Slip and fall accidents"
-            }]
+            elements: [questions[nQuestion]]
         }]
     };
     const survey = new Model(surveyJson);
