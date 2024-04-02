@@ -12,7 +12,7 @@ export default function () {
                 choices: [
                     "Plastic Bottles", "Matches", "Fruit", "Electronics"
                 ],
-                correctAnswer: "Matches"
+                correctAnswer: "Matches, essential for starting a campfire because they provide the necessary ignition source to light the kindling and fuel."
             },
         {
                 type: "radiogroup",
@@ -21,7 +21,7 @@ export default function () {
                 choices: [
                     "Salt", "Boiling", "Lemon Juice", "Sit in the Sun"
                 ],
-                correctAnswer: "Boiling"
+                correctAnswer: "Boiling is the most effective method for purifying it, as it kills harmful bacteria, viruses, and parasites"
             },
         {
                 type: "radiogroup",
@@ -30,7 +30,7 @@ export default function () {
                 choices: [
                     "Canvas", "Dome", "Teepee", "Cabin"
                 ],
-                correctAnswer: "Dome"
+                correctAnswer: "Dome are typically the lightest and easiest to set up due to their simple pole structure "
             },
         {
                 type: "radiogroup",
@@ -39,7 +39,7 @@ export default function () {
                 choices: [
                     "Leave it", "Bury it", "Pack it", "Burn it"
                 ],
-                correctAnswer: "Pack it"
+                correctAnswer: "Pack it, helps to minimize the impact on the environment"
             },
         {
                 type: "radiogroup",
@@ -48,7 +48,7 @@ export default function () {
                 choices: [
                     "Approach it", "Ignore it", "Scare it", "Offer food"
                 ],
-                correctAnswer: "Scare it"
+                correctAnswer: "Scare wild animals and prevent potential conflicts or encounters while ensuring your safety."
             },
         {
                 type: "radiogroup",
@@ -57,7 +57,7 @@ export default function () {
                 choices: [
                     "Leave it out on a table", "Store it in sealed containers", "Scatter it around the campsite", "Hang it from a tree branch"
                 ],
-                correctAnswer: "Store it in sealed containers"
+                correctAnswer: "Store it in sealed containers, helps to prevent wildlife from being attracted to the campsite"
             },
         {
                 type: "radiogroup",
@@ -65,7 +65,7 @@ export default function () {
                 title: "What is the recommended footwear for hiking in rugged terrain while camping?",
                 choices: [ "High heels", "Sandals", "Flip flops", "Hiking boots",
                 ],
-                correctAnswer: "Hiking Boots"
+                correctAnswer: "Hiking Boots provide the necessary support, traction, and protection reducing injury"
             },
         {
                 type: "radiogroup",
@@ -74,7 +74,7 @@ export default function () {
                 choices: [
                     "Compass and map", "Smartphone with GPS", "Binoculars", "Sunglasses"
                 ],
-                correctAnswer: "Compass and map"
+                correctAnswer: "Compass and map, provide guidance and direction, when electronics fail"
             },
         {
                 type: "radiogroup",
@@ -83,7 +83,7 @@ export default function () {
                 choices: [
                 "Inflate the mattress", "Spray insect repellent", "Clear the ground of rocks, sticks, and debris", "Set up a hammock"
                 ],
-                correctAnswer: "Clear the ground of rocks, sticks, and debris"
+                correctAnswer: "Clear the ground of rocks, sticks, and debris to help to create a flat, comfortable surface"
             },
         {
                 type: "radiogroup",
@@ -92,12 +92,12 @@ export default function () {
                 choices: [
                     "Pouring water on the fire to put it out quickly", "Cooking with flammable liquids", "Keeping a bucket of water nearby", "Building the fire close to the tent"
                 ],
-                correctAnswer: "Keeping a bucket of water nearby"
+                correctAnswer: "Keeping a bucket of water nearby is a safe practice while cooking over a campfire as it can be used to quickly extinguish any unexpected flames"
             },
     ];
     const nQuestion = Math.floor((Math.random() * questions.length));
     const surveyJson = {
-        title: "Lifeguard Safety",
+        title: "Camping Safety",
         showCorrectAnswer: "always",
         showProgressBar: "bottom",
         firstPageIsStarted: true,
@@ -105,7 +105,7 @@ export default function () {
         pages: [{
             elements: [{
                 type: "html",
-                html: "You are about to start a quiz on Lifeguard Safety. <br>You will have 30 seconds for every question and 60 seconds to end the quiz.<br>Enter your name below and click <b>Start Quiz</b> to begin."
+                html: "You are about to start a quiz on Camping Safety. <br>You will have 30 seconds for every question and 60 seconds to end the quiz.<br>Enter your name below and click <b>Start Quiz</b> to begin."
             }, {
                 type: "text",
                 name: "username",
