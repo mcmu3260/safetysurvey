@@ -116,17 +116,8 @@ export default function () {
             elements: [questions[nQuestion]]
         }]
     };
-const survey = new Model(surveyJson);
+    const survey = new Model(surveyJson);
 
-survey.onValueChanged.add((sender, options) => {
-  const question = options.question;
-  const userAnswer = question.value;
-  const correctAnswer = question.correctAnswer;
-
-  if (userAnswer && userAnswer!== correctAnswer) {
-    alert(`Incorrect answer. The correct answer is: ${correctAnswer}`);
-  }
-});
     survey.onComplete.add(function (sender) {
         var questions = sender.getAllQuestions();
         for (var i = 0; i < questions.length; i++) {
@@ -137,6 +128,11 @@ survey.onValueChanged.add((sender, options) => {
             console.log("Question: " + questionTitle);
             console.log("Correct Answer: " + correctAnswer);
             console.log("User Answer: " + userAnswer);
+
+            if (userAnswer!== correctAnswer) {
+            var explanation = correctAnswer.split(', ')[1]; // Get the explanation from the correctAnswer string
+            alert(`Incorrect answer for question: ${questionTitle}\nCorrect answer: ${correctAnswer.split(', ')[0]}\nExplanation: ${explanation}`);
+            }
         }
     });
 
