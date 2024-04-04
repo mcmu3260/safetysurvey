@@ -116,8 +116,17 @@ export default function () {
             elements: [questions[nQuestion]]
         }]
     };
-    const survey = new Model(surveyJson);
+const survey = new Model(surveyJson);
 
+survey.onValueChanged.add((sender, options) => {
+  const question = options.question;
+  const userAnswer = question.value;
+  const correctAnswer = question.correctAnswer;
+
+  if (userAnswer && userAnswer!== correctAnswer) {
+    alert(`Incorrect answer. The correct answer is: ${correctAnswer}`);
+  }
+});
     survey.onComplete.add(function (sender) {
         var questions = sender.getAllQuestions();
         for (var i = 0; i < questions.length; i++) {
