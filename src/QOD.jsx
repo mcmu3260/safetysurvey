@@ -128,11 +128,6 @@ export default function () {
             console.log("Question: " + questionTitle);
             console.log("Correct Answer: " + correctAnswer);
             console.log("User Answer: " + userAnswer);
-
-            if (userAnswer!== correctAnswer) {
-            var explanation = correctAnswer.split(', ')[1]; // Get the explanation from the correctAnswer string
-            alert(`Incorrect answer for question: ${questionTitle}\nCorrect answer: ${correctAnswer.split(', ')[0]}\nExplanation: ${explanation}`);
-            }
         }
     });
 
